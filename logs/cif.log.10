@@ -1,0 +1,122 @@
+2020-03-21 14:16:10,124 ERROR: Exception on /builder [GET] [in /usr/local/lib/python3.7/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python3.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/chris/code/crypto_index/app/routes.py", line 55, in index_builder
+    return render_template("builder.html", title= "Cryptocurrency Index Builder", assets=assets, index=index, index_test=index_test)
+UnboundLocalError: local variable 'index' referenced before assignment
+2020-03-21 14:17:46,643 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:52]
+2020-03-21 14:26:03,609 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:52]
+2020-03-21 14:26:46,782 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:52]
+2020-03-21 14:32:31,248 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:52]
+2020-03-21 14:36:35,523 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:52]
+2020-03-21 14:36:52,528 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:52]
+2020-03-21 14:37:13,985 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:52]
+2020-03-21 14:37:57,772 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:52]
+2020-03-21 14:38:45,559 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:52]
+2020-03-21 14:41:09,177 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:52]
+2020-03-21 14:41:15,344 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:52]
+2020-03-21 14:59:27,912 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:56]
+2020-03-21 14:59:57,820 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:56]
+2020-03-21 15:00:29,406 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:56]
+2020-03-21 15:00:37,217 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:56]
+2020-03-21 15:01:06,581 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:56]
+2020-03-21 15:01:33,662 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:56]
+2020-03-21 15:02:05,713 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:56]
+2020-03-21 15:02:29,103 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:56]
+2020-03-21 15:03:39,640 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:56]
+2020-03-21 15:03:51,657 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:56]
+2020-03-21 15:04:10,014 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:56]
+2020-03-21 15:04:16,453 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:56]
+2020-03-21 15:04:22,307 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:56]
+2020-03-21 15:04:38,096 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:56]
+2020-03-21 15:08:10,270 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:53]
+2020-03-21 15:08:16,159 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:53]
+2020-03-21 15:08:43,333 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:53]
+2020-03-21 15:08:48,460 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:53]
+2020-03-21 18:28:23,675 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:53]
+2020-03-21 18:29:02,308 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:53]
+2020-03-21 18:29:08,410 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:53]
+2020-03-21 18:29:17,217 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:53]
+2020-03-21 18:29:22,597 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:53]
+2020-03-21 18:29:38,282 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:53]
+2020-03-21 18:44:20,685 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:53]
+2020-03-21 18:51:06,430 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:53]
+2020-03-22 00:40:21,949 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:53]
+2020-03-22 00:50:33,224 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:53]
+2020-03-22 00:50:39,247 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:53]
+2020-03-22 00:50:47,182 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:53]
+2020-03-22 00:51:01,126 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:53]
+2020-03-22 01:09:19,073 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:53]
+2020-03-22 01:10:49,675 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:53]
+2020-03-22 01:18:01,918 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:53]
+2020-03-22 01:32:16,537 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:53]
+2020-03-22 01:32:21,461 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:53]
+2020-03-22 01:32:43,507 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:53]
+2020-03-22 01:58:23,734 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:53]
+2020-03-22 13:44:19,570 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:53]
+2020-03-22 15:08:15,257 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:53]
+2020-03-22 15:09:08,688 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:53]
+2020-03-22 15:13:13,276 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:53]
+2020-03-22 15:17:53,173 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:53]
+2020-03-22 15:17:59,348 ERROR: Exception on /builder [GET] [in /usr/local/lib/python3.7/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/usr/local/lib/python3.7/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/chris/code/crypto_index/app/routes.py", line 56, in index_builder
+    return render_template("builder.html", title= "Cryptocurrency Index Builder", assets=assets, index_all=index_all, association=association)
+  File "/usr/local/lib/python3.7/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/usr/local/lib/python3.7/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/chris/code/crypto_index/app/templates/builder.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/usr/local/lib/python3.7/site-packages/jinja2/environment.py", line 1005, in render
+    return concat(self.root_render_func(self.new_context(vars)))
+  File "/Users/chris/code/crypto_index/app/templates/builder.html", line 14, in root
+    <th scope="col">Assets</th>
+  File "/Users/chris/code/crypto_index/app/templates/base.html", line 14, in root
+    <span class="icon-bar"></span>
+  File "/usr/local/lib/python3.7/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 10, in root
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  File "/usr/local/lib/python3.7/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 20, in block_doc
+    {% block body -%}
+  File "/usr/local/lib/python3.7/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 39, in block_html
+  File "/usr/local/lib/python3.7/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 92, in block_body
+  File "/Users/chris/code/crypto_index/app/templates/base.html", line 79, in block_content
+  File "/Users/chris/code/crypto_index/app/templates/builder.html", line 38, in block_app_content
+  File "/usr/local/lib/python3.7/site-packages/jinja2/environment.py", line 430, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'wtf' is undefined

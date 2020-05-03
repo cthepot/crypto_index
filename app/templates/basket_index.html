@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+
+    <h1 class="text-center">Create a cryptocurrency index</h1>
+    <br>
+        <div class="row align-items-center">
+            <div class="col-md-4">
+            {{ wtf.quick_form(form) }}
+
+            </div>
+        </div>
+
+    <br>
+    <br>
+    <br>
+    <h2>Your Indexes</h2>
+    <br>
+
+    <table class="table table-striped table-sm table-hover">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Index name</th>
+                <th scope="col">Date of creation</th>
+                <th scope="col">Value start</th>
+                <th scope="col">Value now</th>
+                <th scope="col">% change (24h)</th>
+                <th scope="col">Assets</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for index in index_all %}
+            <tr>
+                <th scope="row">{{index.id}}</th>
+                <th scope="row"><a href="/baskets/{{index.id}}" target="_blank" >{{index.name}}</a></th>
+                <th scope="row">{{index.timestamp}}</th>
+                <th scope="row">{{index.amount}}</th>
+                <th scope="row">Hardcoded</th>
+                <th scope="row">Hardcoded</th>
+                <th scope="row">{{index.assets}}</th>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    <br>
+
+
+{% endblock %}
