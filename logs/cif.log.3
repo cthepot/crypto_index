@@ -1,4 +1,4 @@
-2020-03-22 18:09:15,554 ERROR: Exception on /builder [GET] [in /usr/local/lib/python3.7/site-packages/flask/app.py:1891]
+2020-03-22 18:14:54,369 ERROR: Exception on /builder [GET] [in /usr/local/lib/python3.7/site-packages/flask/app.py:1891]
 Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
     response = self.full_dispatch_request()
@@ -44,7 +44,7 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 92, in block_body
   File "/Users/chris/code/crypto_index/app/templates/base.html", line 79, in block_content
   File "/Users/chris/code/crypto_index/app/templates/builder.html", line 41, in block_app_content
-    <form action="" method="post">
+    <h2>Create a cryptocurrency index</h2>
   File "/usr/local/lib/python3.7/site-packages/jinja2/runtime.py", line 262, in call
     return __obj(*args, **kwargs)
   File "/usr/local/lib/python3.7/site-packages/jinja2/runtime.py", line 570, in __call__
@@ -74,8 +74,15 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/wtforms/fields/core.py", line 454, in iter_choices
     for value, label in self.choices:
 TypeError: 'NoneType' object is not iterable
-2020-03-22 18:09:46,678 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:53]
-2020-03-22 18:09:48,685 ERROR: Exception on /builder [GET] [in /usr/local/lib/python3.7/site-packages/flask/app.py:1891]
+2020-03-24 00:49:51,898 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:53]
+2020-03-24 00:49:55,607 ERROR: Exception on / [GET] [in /usr/local/lib/python3.7/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/util/_collections.py", line 1010, in __call__
+    return self.registry[key]
+KeyError: 123145500905472
+
+During handling of the above exception, another exception occurred:
+
 Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
     response = self.full_dispatch_request()
@@ -89,49 +96,35 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "/usr/local/lib/python3.7/site-packages/flask_login/utils.py", line 261, in decorated_view
-    return func(*args, **kwargs)
-  File "/Users/chris/code/crypto_index/app/routes.py", line 56, in index_builder
-    return render_template("builder.html", title= "Cryptocurrency Index Builder", assets=assets, index_all=index_all)# association=association, form=form)
-  File "/usr/local/lib/python3.7/site-packages/flask/templating.py", line 140, in render_template
-    ctx.app,
-  File "/usr/local/lib/python3.7/site-packages/flask/templating.py", line 120, in _render
-    rv = template.render(context)
-  File "/usr/local/lib/python3.7/site-packages/jinja2/asyncsupport.py", line 76, in render
-    return original_render(self, *args, **kwargs)
-  File "/usr/local/lib/python3.7/site-packages/jinja2/environment.py", line 1008, in render
-    return self.environment.handle_exception(exc_info, True)
-  File "/usr/local/lib/python3.7/site-packages/jinja2/environment.py", line 780, in handle_exception
-    reraise(exc_type, exc_value, tb)
-  File "/usr/local/lib/python3.7/site-packages/jinja2/_compat.py", line 37, in reraise
-    raise value.with_traceback(tb)
-  File "/Users/chris/code/crypto_index/app/templates/builder.html", line 2, in top-level template code
-    {% import 'bootstrap/wtf.html' as wtf %}
-  File "/usr/local/lib/python3.7/site-packages/jinja2/environment.py", line 1005, in render
-    return concat(self.root_render_func(self.new_context(vars)))
-  File "/Users/chris/code/crypto_index/app/templates/builder.html", line 17, in root
-    <th scope="col">Value Start</th>
-  File "/Users/chris/code/crypto_index/app/templates/base.html", line 14, in root
-    <span class="icon-bar"></span>
-  File "/usr/local/lib/python3.7/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 10, in root
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  File "/usr/local/lib/python3.7/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 20, in block_doc
-    {% block body -%}
-  File "/usr/local/lib/python3.7/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 39, in block_html
-  File "/usr/local/lib/python3.7/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 92, in block_body
-  File "/Users/chris/code/crypto_index/app/templates/base.html", line 79, in block_content
-  File "/Users/chris/code/crypto_index/app/templates/builder.html", line 41, in block_app_content
-    <form action="" method="post">
-  File "/usr/local/lib/python3.7/site-packages/jinja2/runtime.py", line 262, in call
-    return __obj(*args, **kwargs)
-  File "/usr/local/lib/python3.7/site-packages/jinja2/runtime.py", line 570, in __call__
-    return self._invoke(arguments, autoescape)
-  File "/usr/local/lib/python3.7/site-packages/jinja2/asyncsupport.py", line 110, in _invoke
-    return original_invoke(self, arguments, autoescape)
-  File "/usr/local/lib/python3.7/site-packages/jinja2/runtime.py", line 574, in _invoke
-    rv = self._func(*arguments)
-  File "/usr/local/lib/python3.7/site-packages/flask_bootstrap/templates/bootstrap/wtf.html", line 482, in macro
-  File "/usr/local/lib/python3.7/site-packages/jinja2/environment.py", line 430, in getattr
-    return getattr(obj, attribute)
-jinja2.exceptions.UndefinedError: 'form' is undefined
-2020-03-22 18:10:59,045 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:53]
+  File "/Users/chris/code/crypto_index/app/routes.py", line 26, in index
+    assets = Asset.query.join(Quote, (Quote.assetname == Asset.assetname)) \
+  File "/usr/local/lib/python3.7/site-packages/flask_sqlalchemy/__init__.py", line 519, in __get__
+    return type.query_class(mapper, session=self.sa.session())
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/orm/scoping.py", line 78, in __call__
+    return self.registry()
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/util/_collections.py", line 1012, in __call__
+    return self.registry.setdefault(key, self.createfunc())
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 3234, in __call__
+    return self.class_(**local_kw)
+  File "/usr/local/lib/python3.7/site-packages/flask_sqlalchemy/__init__.py", line 138, in __init__
+    bind = options.pop('bind', None) or db.engine
+  File "/usr/local/lib/python3.7/site-packages/flask_sqlalchemy/__init__.py", line 937, in engine
+    return self.get_engine()
+  File "/usr/local/lib/python3.7/site-packages/flask_sqlalchemy/__init__.py", line 956, in get_engine
+    return connector.get_engine()
+  File "/usr/local/lib/python3.7/site-packages/flask_sqlalchemy/__init__.py", line 559, in get_engine
+    sa_url = make_url(uri)
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/engine/url.py", line 229, in make_url
+    return _parse_rfc1738_args(name_or_url)
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/engine/url.py", line 291, in _parse_rfc1738_args
+    "Could not parse rfc1738 URL from string '%s'" % name
+sqlalchemy.exc.ArgumentError: Could not parse rfc1738 URL from string '"postgresql:///cif_db'
+2020-03-24 00:50:52,173 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:53]
+2020-03-24 11:46:30,558 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:53]
+2020-03-24 11:47:05,698 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:53]
+2020-03-24 12:08:03,611 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:53]
+2020-03-24 12:09:23,580 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:53]
+2020-03-24 12:13:37,672 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:53]
+2020-03-24 12:33:23,005 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:53]
+2020-03-24 12:33:41,145 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:53]
+2020-03-24 12:34:39,681 INFO: CIF startup [in /Users/chris/code/crypto_index/app/__init__.py:53]

@@ -1,0 +1,13 @@
+flask
+flask-sqlalchemy
+flask-migrate
+flask-bootstrap
+flask-login
+flask-mail
+livereload
+jwt
+flask-wtf
+email-validator
+requests
+postgres
+python-dotenv
