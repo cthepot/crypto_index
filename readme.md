@@ -1,5 +1,7 @@
 # Cryptocurrency index fund
 
+As an authentified user, create a basket of cryptocurrency from CMC list and track its performance. Limited front-end, unfinished.
+
 ## Start
 
     $ cd crypto_index
